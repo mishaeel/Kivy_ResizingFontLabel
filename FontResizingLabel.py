@@ -46,13 +46,13 @@ class FontResizingLabel(Label):
 		oss = self.original_window_size
 		if (wss[0] / oss[0]) >= (wss[1] / oss[1]):
 			ratio = wss[1] / oss[1]
-			new_fs_int = fs * ratio
-			new_fs_str = str(new_fs_int) + 'sp'
+			new_fs = fs * ratio
+			new_fs_str = str(new_fs) + 'sp'
 			self.font_size = new_fs_str
 		elif (wss[0] / oss[0]) < (wss[1] / oss[1]):
 			ratio = wss[0] / oss[0]
-			new_fs_int = fs * ratio
-			new_fs_str = str(new_fs_int) + 'sp'
+			new_fs = fs * ratio
+			new_fs_str = str(new_fs) + 'sp'
 			self.font_size = new_fs_str		
 		else:
 			pass
