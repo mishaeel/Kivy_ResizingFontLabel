@@ -5,7 +5,7 @@ from kivy.core.window import Window
 This code takes a Kivy Label and resizes the font automatically
 if the window is resized/maximized/restored or if the window is dragged
 to another display. I have only tested on Windows and desktop, 
-float and grid layouts.Feel free to let me know if you experience issues.
+float and grid layouts. Feel free to let me know if you experience issues.
 
 To use the code, you have to declare the inital font size in python. 
 For whatever reason, declaring the iniial size in the kv language has not 
@@ -18,7 +18,7 @@ Either: 1. Add the code below to your own Label, or
            ---------------------------------------------------------
 			from FontResizingLabel import FontResizingLabel
 
-			class SomeLabel(FontResizingLabel):
+			class YourLabel(FontResizingLabel):
 
 				original_font_size = '22sp'
 				
@@ -26,7 +26,7 @@ Either: 1. Add the code below to your own Label, or
 				# as a string with sp units
 
 				def __init__(self, **kwargs):
-					super(SomeLabel, self).__init__(**kwargs)
+					super(YourLabel, self).__init__(**kwargs)
 '''
 
 class FontResizingLabel(Label):
