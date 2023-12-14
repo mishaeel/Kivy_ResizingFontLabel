@@ -40,13 +40,7 @@ class FontResizingLabel(Label):
 		Window.bind(on_resize=self.resize_font)
 		self.font_size = self.original_font_size
 
-	def get_font_size(self, *args):
-		fs = self.font_size
-		ws = Window.size
-		wss = Window.system_size
-
 	def resize_font(self, *args):
-
 		fs = int(self.original_font_size[:2])
 		wss = Window.system_size
 		oss = self.original_window_size
