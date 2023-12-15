@@ -7,7 +7,7 @@ To use the code, you have to declare the inital font size in python.
 For whatever reason, declaring the initial size in the kv language has not 
 worked for me. You also have to use 'sp' units in your font size.
 
-To use either:
+To use, either:
 
 1. Add the code in the FontResizingLabel class to your own Label, or
 
