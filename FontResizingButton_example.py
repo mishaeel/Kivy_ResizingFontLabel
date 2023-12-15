@@ -51,7 +51,7 @@ class FontResizingApp(App):
 		pos_hint: {'x': .35, 'y': .451}
 		size_hint: (.3, .08)
 		text: 'not clicked!'
-		on_press: self.text = 'clicked!'
+		on_press: self.text = 'was clicked!'
 '''
 
 	def build(self):
