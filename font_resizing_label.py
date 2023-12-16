@@ -16,7 +16,7 @@ Either: 1. Add the code below to your own Label, or
         2. Save the code as a module in your app's root directory
            and include as follows in your application's python code.
            ---------------------------------------------------------
-		from FontResizingLabel import FontResizingLabel
+		from font_resizing_label import FontResizingLabel
 
 		class YourLabel(FontResizingLabel):
 
